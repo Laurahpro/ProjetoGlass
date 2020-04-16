@@ -5,7 +5,7 @@
     <meta charset="UTF-8">;
     <title>Google Glass - A Origem e a Decadência de um grande Projeto</title>
     <link rel="stylesheet" type="text/css" href="./_css/estilo.css" />
-    <link rel="stylesheet"  href="./_css/fotos.css" />
+    <link rel="stylesheet"  href="./_css/form.css" />
 
 </head>
 <script src="./_javascript/funcoes.js"> </script>
@@ -37,33 +37,44 @@
 
 
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
+<form> 
+    
+    <fieldset id="usuario"> 
+    <legend> Identificação do Usuário </legend> 
+    <p>Nome:</p>
+    <p>Senha:</p>
+    <p>E-mail:</p>
+   <fieldset id="sexo"> <legend> Sexo:</legend>
         - Masculino
-        - Feminino
-    Data de Nascimento:
+        - Feminino</fieldset>
+    <p>Data de Nascimento:</p>
+</fieldset>
 
-Endereço do Usuário
+<fieldset id="endereco">
+    <legend> Endereço do Usuário </legend>
     Logradouro:
     Número:
     Estado:
     Cidade:
+</fieldset>
 
-Mensagem do Usuário
+<fieldset id="mensagem">
+<legend> Mensagem do Usuário </legend>
     Grau de Urgência:
     Mensagem:
+</fieldset>
 
-Quero um Google Glass
+<fieldset id="pedido">
+<legend> Quero um Google Glass </legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
+</fieldset>
 
 
 [BOTÃO ENVIAR]
+</form>
 
 <footer id="rodape">
     <p>Copyright &copy; 2020 - By Laurah </br>

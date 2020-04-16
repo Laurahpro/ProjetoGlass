@@ -41,19 +41,19 @@
     
     <fieldset id="usuario"> 
     <legend> Identificação do Usuário </legend> 
-    <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
-    <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 caracteres" /> </p>
+    <p> <label for="cNome">Nome:</label>  <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+    <p> <label for="cSenha"> Senha:  </label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 caracteres" /> </p>
     <p>E-mail: <input type="email" name="tmail" id="cMail" size="20" maxlength="50" placeholder="seu email" /> </p>
    <fieldset id="sexo"> <legend> Sexo:</legend>
-        - Masculino
-        - Feminino</fieldset>
-    <p>Data de Nascimento:</p>
+        <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label> </fieldset>
+    <p>Data de Nascimento: <input type="date" name="cNasc" id="cNasc"/> </p>
 </fieldset>
 
 <fieldset id="endereco">
     <legend> Endereço do Usuário </legend>
-    Logradouro:
-    Número:
+    <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Travessa" /> </p>
+    <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="1999"/></p>
     Estado:
     Cidade:
 </fieldset>

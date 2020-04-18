@@ -6,7 +6,13 @@
     <title>Google Glass - A Origem e a Decadência de um grande Projeto</title>
     <link rel="stylesheet" type="text/css" href="./_css/estilo.css" />
     <link rel="stylesheet"  href="./_css/form.css" />
-
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+        }
+    </script>
 </head>
 <script src="./_javascript/funcoes.js"> </script>
 <body>
@@ -37,7 +43,7 @@
 
 
 
-<form method="post" id="fContato" action="mailto:laurah.gna@gmail.com"> 
+<form method="post" id="fContato" action="mailto:laurah.gna@gmail.com" oninput="calc_total();"> 
     
     <fieldset id="usuario"> 
     <legend> Identificação do Usuário </legend> 

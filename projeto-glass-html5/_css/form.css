@@ -14,3 +14,15 @@ input, textarea {
 input:hover textarea:hover {
     background-color: aquamarine;
 }
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
